@@ -1,0 +1,32 @@
+package hw;
+
+public class Tower 
+{
+    public static void main(String[] args) 
+    {
+			int SIZE;
+			SIZE = 5;
+		
+    	// x = line
+    	
+    	// y = -x + SIZE^2
+    	// dot = - line + SIZE*SIZE
+    	
+    	// y = x
+    	// asterisks = line
+
+for (int line = 1; line <= SIZE * SIZE; line++)
+    	{
+    		for (int dot = SIZE * SIZE; dot > line; dot--)
+    		{
+    			System.out.print(".");
+    		}
+    		
+    		for (int asterisks = 0; asterisks < line; asterisks++)
+    		{
+    			System.out.print("*");
+    		}
+    		System.out.println();
+    	}
+      
+   }
